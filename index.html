@@ -18,25 +18,28 @@
      <title>NuCamp: A Better Way To Camp</title>
 </head>
 
-<body>
+    <body>
 
-    <header class= "jumbotron jumbotron-fluid">
-        <div>
+        <header class= "jumbotron jumbotron-fluid">
             <div class= "container">
                 <div class= "row">
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                   <img src="img/logo.png" class="img-fluid"/>
-                        </div>
-                    </div>
-                    <div class= "col">
-            <h1>NuCamp</h1>
-            <h2>a better way to camp</h2>
+                <img src="img/logo.png" class="img-fluid"/>
+                </div>
+                <div class= "col">
+                        <h1>NuCamp</h1> 
+                        <h2>a better way to camp</h2>
+                </div>
+                    <a class="btn text-nowrap" role="button" href="#reserveForm">
+                    <div class="col-md-4 col-lg-2 mt-4">
+                    <button type="button" class="reserveForm btn btn-primary bg-info text-white">Reserve Campsite</button>
+                </div>
             </div>
-        </div>
-        </div>
-    </header>
+        </div>    
+                    </a>
+        </header>
 
- 
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30"/></a>
@@ -71,22 +74,29 @@
                             </div>
                         </div>
                     </div>
-          
-                    <div>
-                <div class= "row row-content align-items-center">
-                    <div class= "col-sm-4 col-md-3">
+           
+                        
+         <div class= "row row-content">
+            <div class= "col-sm-4 col-md-3"> 
                 <h2>Featured Campsites</h2>
+              </div>
+            <div class="col">
+                    <div class="media">
+                     <h3>React Lake Campground</h3>
+                  <p class="d-none d-sm-block text-sm-right">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg"/>
+                        <div class="media-body"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class= "col">
-                    <h3>React Lake Campground</h3>
-                    <p class= "d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                </div>
-            </div>
 
-            <div>
+           
+           <div>
                 <div class= "row row-content align-items-center">
                      <div class= "col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
+                </div>
+                </div>
                 </div>
                 <div class="col">
                     <div class="media">
@@ -97,6 +107,52 @@
                         </div>
                     </div>
                 </div>
+              </div>              
+               
+               
+               
+                <div class="row row-content">
+                    <div class="col col-sm-6 mx-auto">
+                        <div class="card">
+                            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                            <div class="card-body">
+                                <form id="reserveForm">
+                                    <div class="form-group row">
+                                        <label class="col-sm-6 col-form-label" for="Numofcampers">Number of Campers</label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="numofcampers">
+                                                <option>Select...</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+
+                                        <label form="date" class="col col-sm-6 col-form-label">Date</label>
+                                        <div class="col-sm-6">
+                                            <input class="form-control" type="date" id="date" placeholder="mm/dd/yyyy">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+               
+
+               
 
     <footer class="site-footer">
         <div class="container">
@@ -121,6 +177,7 @@
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone fa-lg text-primary"></i> 1-206-555-1234</a><br/>
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co</a>
                 </div>
+                
     </footer>
      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
