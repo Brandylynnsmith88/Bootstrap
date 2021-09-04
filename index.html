@@ -29,15 +29,16 @@
                 <div class= "col">
                         <h1>NuCamp</h1> 
                         <h2>a better way to camp</h2>
-                </div>
+                </div> 
                     <a class="btn text-nowrap" role="button" href="#reserveForm">
-                    <div class="col-md-4 col-lg-2 mt-4">
-                    <button type="button" class="reserveForm btn btn-primary bg-info text-white">Reserve Campsite</button>
+                     <div class="col-md-4 col-lg-2 mt-4">
+                    <button type="button" class="reserveForm btn btn-primary bg-info text-white" class="button-tooltip" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at 
+1-206-555-1234">Reserve Campsite</button>
+                    </a>
                 </div>
             </div>
-        </div>    
-                    </a>
-        </header>
+        </div>  
+    </header>
 
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -47,7 +48,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collaps navbar-collapse" id="nucampNavbar">
+        <div class="collapse navbar-collapse" id="nucampNavbar">
             <ul class="navbar-nav">
             <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
             <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
@@ -183,6 +184,11 @@
      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script>
+         $(function () {
+             $('[date-toggle="tooltip"]').tooltip()
+             })
+     </script>
 
 </body>
 
